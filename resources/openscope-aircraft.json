@@ -9408,12 +9408,12 @@
     "icao": "E75L",
     "engines": {
       "number": 2,
-      "type": "G"
+      "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
-      "lahso": 7,
+      "lahso": 6,
       "cwt": "G"
     },
     "ceiling": 41000,
