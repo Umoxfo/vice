@@ -704,6 +704,43 @@
     }
   },
   {
+    "name": "Hawker 900",
+    "icao": "H25B",
+    "engines": {
+      "number": 2,
+      "type": "J"
+    },
+    "weightClass": "M",
+    "category": {
+      "srs": 3,
+      "lahso": 7,
+      "cwt": "H"
+    },
+    "ceiling": 41000,
+    "rate": {
+      "climb": 2000,
+      "descent": 1500,
+      "accelerate": 5.9,
+      "decelerate": 3
+    },
+    "runway": {
+      "takeoff": 1.513,
+      "landing": 0.808
+    },
+    "speed": {
+      "min": 93,
+      "landing": 125,
+      "cruise": 430,
+      "cruiseM": 0.75,
+      "max": 452,
+      "maxM": 0.78
+    },
+    "capability": {
+      "ils": true,
+      "fix": true
+    }
+  },
+  {
     "name": "Beechcraft Twin Bonanza",
     "icao": "BE50",
     "engines": {
