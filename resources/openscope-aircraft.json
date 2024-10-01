@@ -3116,11 +3116,11 @@
       "number": 3,
       "type": "J"
     },
-    "weightClass": "S+",
+    "weightClass": "M",
     "category": {
       "srs": 3,
-      "lahso": 8,
-      "cwt": "H"
+      "lahso": 4,
+      "cwt": "G"
     },
     "ceiling": 47000,
     "rate": {
