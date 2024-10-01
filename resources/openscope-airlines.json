@@ -18339,19 +18339,80 @@
     "icao": "twy",
     "name": "Solarius Aviation",
     "callsign": {
-      "name": "Twylight",
+      "name": "Twilight",
       "callsignFormats": [
+        "###",
         "##"
       ]
     },
     "fleets": {
       "default": [
         [
-          "GLEX",
-          4
+          "GA5C",
+          1
         ],
         [
           "GLF5",
+          7
+        ],
+        [
+          "GLF4",
+          9
+        ],
+        [
+          "G280",
+          1
+        ],
+        [
+          "GALX",
+          1
+        ],
+        [
+          "GLEX",
+          6
+        ],
+        [
+          "GL5T",
+          2
+        ],
+        [
+          "FA7X",
+          2
+        ],
+        [
+          "F900",
+          4
+        ],
+        [
+          "F2TH",
+          2
+        ],
+        [
+          "CL60",
+          6
+        ],
+        [
+          "CL35",
+          1
+        ],
+        [
+          "CL30",
+          3
+        ],
+        [
+          "H25B",
+          1
+        ],
+        [
+          "C680",
+          1
+        ],
+        [
+          "C56X",
+          2
+        ],
+        [
+          "PC12",
           1
         ]
       ]
