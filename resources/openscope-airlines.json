@@ -15149,6 +15149,52 @@
     }
   },
   {
+    "icao": "ctf",
+    "name": "Cutter Aviation",
+    "callsign": {
+      "name": "Cutter Flight",
+      "callsignFormats": [
+        "##"
+      ]
+    },
+    "fleets": {
+      "default": [
+        [
+          "C68A",
+          1
+        ],
+        [
+          "C56X",
+          1
+        ],
+        [
+          "LJ60",
+          2
+        ],
+        [
+          "BE40",
+          2
+        ],
+        [
+          "PC24",
+          3
+        ],
+        [
+          "HDJT",
+          20
+        ],
+        [
+          "BE20",
+          1
+        ],
+        [
+          "PC12",
+          3
+        ]
+      ]
+    }
+  },
+  {
     "icao": "ctn",
     "name": "Croatia Airlines",
     "callsign": {
