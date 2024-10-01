@@ -10108,6 +10108,43 @@
     }
   },
   {
+    "name": "Bombardier Global 7500",
+    "icao": "GL7T",
+    "engines": {
+      "number": 2,
+      "type": "J"
+    },
+    "weightClass": "M",
+    "category": {
+      "srs": 3,
+      "lahso": 7,
+      "cwt": "F"
+    },
+    "ceiling": 51000,
+    "rate": {
+      "climb": 3600,
+      "descent": 2200,
+      "accelerate": 5.9,
+      "decelerate": 3
+    },
+    "runway": {
+      "takeoff": 1.756,
+      "landing": 0.682
+    },
+    "speed": {
+      "min": 98,
+      "landing": 125,
+      "cruise": 562,
+      "cruiseM": 0.85,
+      "max": 612,
+      "maxM": 0.925
+    },
+    "capability": {
+      "ils": true,
+      "fix": true
+    }
+  },
+  {
     "name": "Gulfstream IV",
     "icao": "GLF4",
     "engines": {
