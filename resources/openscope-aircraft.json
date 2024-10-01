@@ -2111,36 +2111,36 @@
     }
   },
   {
-    "name": "Cessna Citation 560XL",
+    "name": "Cessna Citation XLS",
     "icao": "C56X",
     "engines": {
       "number": 2,
       "type": "J"
     },
-    "weightClass": "S+",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
       "cwt": "H"
     },
-    "ceiling": 43000,
+    "ceiling": 45000,
     "rate": {
-      "climb": 2500,
-      "descent": 1800,
+      "climb": 3000,
+      "descent": 3000,
       "accelerate": 4.5,
       "decelerate": 3
     },
     "runway": {
-      "takeoff": 1.50,
-      "landing": 1.50
+      "takeoff": 1.094,
+      "landing": 0.969
     },
     "speed": {
-      "min": 95,
-      "landing": 130,
-      "cruise": 360,
-      "cruiseM": 0.72,
-      "max": 370,
-      "maxM": 0.73
+      "min": 90,
+      "landing": 117,
+      "cruise": 441,
+      "cruiseM": 0.73,
+      "max": 496,
+      "maxM": 0.75
     },
     "capability": {
       "ils": true,
