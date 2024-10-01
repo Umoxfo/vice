@@ -9737,7 +9737,7 @@
     }
   },
   {
-    "name": "Embraer Legacy 600",
+    "name": "Embraer Praetor 500",
     "icao": "E545",
     "engines": {
       "number": 2,
@@ -9749,7 +9749,7 @@
       "lahso": 6,
       "cwt": "H"
     },
-    "ceiling": 37000,
+    "ceiling": 45000,
     "rate": {
       "climb": 1900,
       "descent": 2200,
@@ -9757,16 +9757,16 @@
       "decelerate": 3
     },
     "runway": {
-      "takeoff": 2.2,
-      "landing": 3
+      "takeoff": 1.287,
+      "landing": 0.636
     },
     "speed": {
       "min": 110,
       "landing": 125,
-      "cruise": 440,
+      "cruise": 450,
       "cruiseM": 0.78,
-      "max": 450,
-      "maxM": 0.80
+      "max": 466,
+      "maxM": 0.83
     },
     "capability": {
       "ils": true,
