@@ -9373,10 +9373,10 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "S+",
+    "weightClass": "M",
     "category": {
       "srs": 3,
-      "lahso": null,
+      "lahso": 6,
       "cwt": "H"
     },
     "ceiling": 45000,
