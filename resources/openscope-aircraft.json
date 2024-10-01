@@ -9774,16 +9774,16 @@
     }
   },
   {
-    "name": "Embraer Legacy 500",
+    "name": "Embraer Praetor 600",
     "icao": "E550",
     "engines": {
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
-      "lahso": 7,
+      "lahso": 6,
       "cwt": "H"
     },
     "ceiling": 45000,
@@ -9794,8 +9794,8 @@
       "decelerate": 3
     },
     "runway": {
-      "takeoff": 4.1,
-      "landing": 2.1
+      "takeoff": 1.438,
+      "landing": 0.66
     },
     "speed": {
       "min": 104,
