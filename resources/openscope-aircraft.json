@@ -10219,6 +10219,43 @@
     }
   },
   {
+    "name": "Gulfstream G650",
+    "icao": "GLF6",
+    "engines": {
+      "number": 2,
+      "type": "J"
+    },
+    "weightClass": "M",
+    "category": {
+      "srs": 3,
+      "lahso": 8,
+      "cwt": "F"
+    },
+    "ceiling": 51000,
+    "rate": {
+      "climb": 3100,
+      "descent": 2200,
+      "accelerate": 5.9,
+      "decelerate": 3
+    },
+    "runway": {
+      "takeoff": 1.615,
+      "landing": 0.84
+    },
+    "speed": {
+      "min": 98,
+      "landing": 130,
+      "cruise": 488,
+      "cruiseM": 0.85,
+      "max": 531,
+      "maxM": 0.925
+    },
+    "capability": {
+      "ils": true,
+      "fix": true
+    }
+  },
+  {
     "name": "Hawker 850",
     "icao": "H25B",
     "engines": {
