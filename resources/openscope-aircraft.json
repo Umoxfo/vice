@@ -10225,10 +10225,10 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "S",
+    "weightClass": "L",
     "category": {
       "srs": 3,
-      "lahso": 1,
+      "lahso": 4,
       "cwt": "I"
     },
     "ceiling": 41000,
