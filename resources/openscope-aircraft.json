@@ -8602,24 +8602,24 @@
       "lahso": 7,
       "cwt": "H"
     },
-    "ceiling": 41000,
+    "ceiling": 45000,
     "rate": {
       "climb": 4500,
-      "descent": 2200,
+      "descent": 2500,
       "accelerate": 5.9,
       "decelerate": 3
     },
     "runway": {
-      "takeoff": 1.8,
-      "landing": 1.05
+      "takeoff": 1.466,
+      "landing": 0.792
     },
     "speed": {
-      "min": 110,
-      "landing": 130,
-      "cruise": 460,
-      "cruiseM": 0.77,
+      "min": 109,
+      "landing": 125,
+      "cruise": 459,
+      "cruiseM": 0.8,
       "max": 478,
-      "maxM": 0.80
+      "maxM": 0.83
     },
     "capability": {
       "ils": true,
