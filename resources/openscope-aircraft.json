@@ -8627,7 +8627,7 @@
     }
   },
   {
-    "name": "Bombardier Challenger 350",
+    "name": "Bombardier Challenger 3500",
     "icao": "CL35",
     "engines": {
       "number": 2,
@@ -8647,16 +8647,16 @@
       "decelerate": 3
     },
     "runway": {
-      "takeoff": 1.466,
-      "landing": 0.792
+      "takeoff": 1.474,
+      "landing": 0.721
     },
     "speed": {
-      "min": 110,
-      "landing": 130,
-      "cruise": 460,
-      "cruiseM": 0.77,
+      "min": 109,
+      "landing": 125,
+      "cruise": 455,
+      "cruiseM": 0.8,
       "max": 478,
-      "maxM": 0.80
+      "maxM": 0.83
     },
     "capability": {
       "ils": true,
