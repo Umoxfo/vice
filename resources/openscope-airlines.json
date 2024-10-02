@@ -18518,6 +18518,57 @@
     }
   },
   {
+    "icao": "pxt",
+    "name": "Pacific Coast Jet",
+    "callsign": {
+      "name": "Pack Coast",
+      "callsignFormats": [
+        "##",
+        "###"
+      ]
+    },
+    "fleets": {
+      "default": [
+        [
+          "C510",
+          1
+        ],
+        [
+          "C25M",
+          1
+        ],
+        [
+          "C25A",
+          3
+        ],
+        [
+          "C25B",
+          5
+        ],
+        [
+          "C56X",
+          2
+        ],
+        [
+          "C680",
+          2
+        ],
+        [
+          "C750",
+          1
+        ],
+        [
+          "E55P",
+          1
+        ],
+        [
+          "PC12",
+          2
+        ]
+      ]
+    }
+  },
+  {
     "icao": "xoj",
     "name": "Exojet",
     "callsign": {
