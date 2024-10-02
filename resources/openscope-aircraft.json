@@ -8561,7 +8561,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "S+",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 9,
@@ -8575,16 +8575,17 @@
       "decelerate": 3
     },
     "runway": {
-      "takeoff": 1.701,
-      "landing": 1.067
+      "takeoff": 1.6,
+      "landing": 1.015
     },
     "speed": {
-      "min": 120,
-      "landing": 135,
-      "cruise": 470,
+      "min": 114,
+      "v2": 125,
+      "landing": 130,
+      "cruise": 528,
       "cruiseM": 0.85,
-      "max": 495,
-      "maxM": 0.89
+      "max": 536,
+      "maxM": 0.935
     },
     "capability": {
       "ils": true,
