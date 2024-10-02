@@ -18434,6 +18434,29 @@
     }
   },
   {
+    "icao": "kai",
+    "name": "KaiserAir",
+    "callsign": {
+      "name": "Kaiser",
+      "callsignFormats": [
+        "##",
+        "###"
+      ]
+    },
+    "fleets": {
+      "default": [
+        [
+          "B737",
+          1
+        ],
+        [
+          "B738",
+          2
+        ]
+      ]
+    }
+  },
+  {
     "icao": "kpo",
     "name": "Nxt Jet",
     "callsign": {
