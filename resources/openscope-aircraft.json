@@ -5368,13 +5368,13 @@
     }
   },
   {
-    "name": "Airbus A320 Neo",
+    "name": "Airbus A320neo",
     "icao": "A20N",
     "engines": {
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -5406,13 +5406,13 @@
     }
   },
   {
-    "name": "Airbus A321 Neo",
+    "name": "Airbus A321neo",
     "icao": "A21N",
     "engines": {
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -5709,7 +5709,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -5746,7 +5746,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -5783,7 +5783,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -5935,7 +5935,7 @@
     "weightClass": "H",
     "category": {
       "srs": 3,
-      "lahso": 8,
+      "lahso": 9,
       "cwt": "D"
     },
     "ceiling": 41450,
@@ -6339,7 +6339,7 @@
       "number": 2,
       "type": "T"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 3,
@@ -6376,7 +6376,7 @@
       "number": 2,
       "type": "T"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 3,
@@ -6407,13 +6407,13 @@
     }
   },
   {
-    "name": "ATR 72-500",
+    "name": "ATR 72-202",
     "icao": "AT72",
     "engines": {
       "number": 2,
       "type": "T"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 3,
@@ -6450,7 +6450,7 @@
       "number": 2,
       "type": "T"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 3,
@@ -6487,7 +6487,7 @@
       "number": 2,
       "type": "T"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 3,
@@ -6564,7 +6564,7 @@
     "weightClass": "M",
     "category": {
       "srs": 3,
-      "lahso": 9,
+      "lahso": 8,
       "cwt": "F"
     },
     "ceiling": 41000,
@@ -6601,7 +6601,7 @@
     "weightClass": "M",
     "category": {
       "srs": 3,
-      "lahso": 9,
+      "lahso": 8,
       "cwt": "F"
     },
     "ceiling": 41000,
@@ -6712,7 +6712,7 @@
     "weightClass": "H",
     "category": {
       "srs": 3,
-      "lahso": 9,
+      "lahso": 7,
       "cwt": "B"
     },
     "ceiling": 43000,
@@ -6931,7 +6931,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -7079,7 +7079,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 8,
@@ -7116,7 +7116,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -7153,7 +7153,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -7190,7 +7190,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 8,
@@ -7227,10 +7227,10 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
-      "lahso": 9,
+      "lahso": 8,
       "cwt": "F"
     },
     "ceiling": 41000,
@@ -7264,10 +7264,10 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
-      "lahso": 9,
+      "lahso": 8,
       "cwt": "F"
     },
     "ceiling": 41000,
@@ -7443,7 +7443,7 @@
     }
   },
   {
-    "name": "Boeing 747-8i",
+    "name": "Boeing 747-8",
     "icao": "B748",
     "engines": {
       "number": 4,
@@ -7452,7 +7452,7 @@
     "weightClass": "H",
     "category": {
       "srs": 3,
-      "lahso": 10,
+      "lahso": 8,
       "cwt": "B"
     },
     "ceiling": 45000,
@@ -7486,7 +7486,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -7523,7 +7523,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 8,
@@ -8747,7 +8747,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -8784,7 +8784,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -8821,7 +8821,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 8,
@@ -9562,7 +9562,7 @@
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -9593,13 +9593,13 @@
     }
   },
   {
-    "name": "Embraer RJ145",
+    "name": "Embraer ERJ145",
     "icao": "E145",
     "engines": {
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
