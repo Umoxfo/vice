@@ -7813,13 +7813,13 @@
     }
   },
   {
-    "name": "Bombardier CSeries CS100",
+    "name": "Airbus A220-100",
     "icao": "BCS1",
     "engines": {
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -7833,8 +7833,8 @@
       "decelerate": 3
     },
     "runway": {
-      "takeoff": 1.2,
-      "landing": 1.3
+      "takeoff": 1.219,
+      "landing": 1.356
     },
     "speed": {
       "min": 110,
