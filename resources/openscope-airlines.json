@@ -42186,6 +42186,24 @@
     }
   },
   {
+    "icao": "tzp",
+    "name": "ZIPAIR Tokyo",
+    "callsign": {
+      "name": "ZIPPY",
+      "callsignFormats": [
+        "##"
+      ]
+    },
+    "fleets": {
+      "default": [
+        [
+          "B788",
+          8
+        ]
+      ]
+    }
+  },
+  {
     "icao": "uae",
     "name": "Emirates",
     "callsign": {
