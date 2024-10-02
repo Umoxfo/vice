@@ -7850,13 +7850,13 @@
     }
   },
   {
-    "name": "Bombardier CSeries CS300",
+    "name": "Airbus A220-300",
     "icao": "BCS3",
     "engines": {
       "number": 2,
       "type": "J"
     },
-    "weightClass": "L",
+    "weightClass": "M",
     "category": {
       "srs": 3,
       "lahso": 7,
@@ -7870,8 +7870,8 @@
       "decelerate": 3
     },
     "runway": {
-      "takeoff": 1.5,
-      "landing": 1.4
+      "takeoff": 1.524,
+      "landing": 1.463
     },
     "speed": {
       "min": 110,
