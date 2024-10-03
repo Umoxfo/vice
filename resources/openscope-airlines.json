@@ -26753,6 +26753,29 @@
     }
   },
   {
+    "icao": "jsx",
+    "name": "JSX",
+    "callsign": {
+      "name": "BIGSTRIPE",
+      "callsignFormats": [
+        "###",
+        "####"
+      ]
+    },
+    "fleets": {
+      "default": [
+        [
+          "E135",
+          14
+        ],
+        [
+          "E145",
+          31
+        ]
+      ]
+    }
+  },
+  {
     "icao": "jta",
     "name": "Japan Transocean Air",
     "callsign": {
