@@ -10297,6 +10297,80 @@
     }
   },
   {
+    "name": "Gulfstream G500",
+    "icao": "GA5C",
+    "engines": {
+      "number": 2,
+      "type": "J"
+    },
+    "weightClass": "M",
+    "category": {
+      "srs": 3,
+      "lahso": 7,
+      "cwt": "F"
+    },
+    "ceiling": 51000,
+    "rate": {
+      "climb": 3100,
+      "descent": 2200,
+      "accelerate": 5.9,
+      "decelerate": 3
+    },
+    "runway": {
+      "takeoff": 1.615,
+      "landing": 0.84
+    },
+    "speed": {
+      "min": 101,
+      "landing": 130,
+      "cruise": 488,
+      "cruiseM": 0.85,
+      "max": 531,
+      "maxM": 0.925
+    },
+    "capability": {
+      "ils": true,
+      "fix": true
+    }
+  },
+  {
+    "name": "Gulfstream G600",
+    "icao": "GA6C",
+    "engines": {
+      "number": 2,
+      "type": "J"
+    },
+    "weightClass": "M",
+    "category": {
+      "srs": 3,
+      "lahso": 7,
+      "cwt": "F"
+    },
+    "ceiling": 51000,
+    "rate": {
+      "climb": 3100,
+      "descent": 2200,
+      "accelerate": 5.9,
+      "decelerate": 3
+    },
+    "runway": {
+      "takeoff": 1.737,
+      "landing": 0.84
+    },
+    "speed": {
+      "min": 101,
+      "landing": 130,
+      "cruise": 488,
+      "cruiseM": 0.85,
+      "max": 531,
+      "maxM": 0.925
+    },
+    "capability": {
+      "ils": true,
+      "fix": true
+    }
+  },
+  {
     "name": "Hawker 850",
     "icao": "H25B",
     "engines": {
