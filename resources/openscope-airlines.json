@@ -42981,6 +42981,28 @@
     }
   },
   {
+    "icao": "usc",
+    "name": "AirNet II",
+    "callsign": {
+      "name": "Star Check",
+      "callsignFormats": [
+        "###"
+      ]
+    },
+    "fleets": {
+      "default": [
+        [
+          "BE58",
+          6
+        ],
+        [
+          "LJ35",
+          13
+        ]
+      ]
+    }
+  },
+  {
     "icao": "uzb",
     "name": "Uzbekistan Airways",
     "callsign": {
