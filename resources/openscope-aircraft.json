@@ -858,9 +858,9 @@
       "number": 2,
       "type": "P"
     },
-    "weightClass": "S",
+    "weightClass": "L",
     "category": {
-      "srs": 1,
+      "srs": 2,
       "lahso": 6,
       "cwt": "I"
     },
