@@ -104,87 +104,114 @@ func (wp *Waypoint) ETA(p math.Point2LL, gs float32) time.Duration {
 type WaypointArray []Waypoint
 
 func (wslice WaypointArray) Encode() string {
-	var entries []string
-	for _, w := range wslice {
-		s := w.Fix
+	entries := make([]string, len(wslice))
+
+	var sb strings.Builder
+	for i, w := range wslice {
+		sb.WriteString(w.Fix)
+
 		if w.AltitudeRestriction != nil {
-			s += "/a" + w.AltitudeRestriction.Encoded()
+			sb.WriteString("/a")
+			sb.WriteString(w.AltitudeRestriction.Encoded())
+
+			// Better
+			// w.AltitudeRestriction.Encoded(&sb)
 		}
+
 		if w.Speed != 0 {
-			s += fmt.Sprintf("/s%d", w.Speed)
+			_, _ = fmt.Fprintf(&sb, "/s%d", w.Speed)
 		}
+
+		if w.Heading != 0 {
+			_, _ = fmt.Fprintf(&sb, "/h%d", w.Heading)
+		}
+
+		if w.Arc != nil {
+			if w.Arc.Fix != "" {
+				_, _ = fmt.Fprintf(&sb, "/arc%.1f%s", w.Arc.Radius, w.Arc.Fix)
+			} else {
+				_, _ = fmt.Fprintf(&sb, "/arc%.1f", w.Arc.Length)
+			}
+		}
+
 		if pt := w.ProcedureTurn; pt != nil {
 			if pt.Type == PTStandard45 {
 				if !pt.RightTurns {
-					s += "/lpt45"
+					sb.WriteString("/lpt45")
 				} else {
-					s += "/pt45"
+					sb.WriteString("/pt45")
 				}
 			} else {
 				if !pt.RightTurns {
-					s += "/lhilpt"
+					sb.WriteString("/lhilpt")
 				} else {
-					s += "/hilpt"
+					sb.WriteString("/hilpt")
 				}
 			}
+
 			if pt.MinuteLimit != 0 {
-				s += fmt.Sprintf("%.1fmin", pt.MinuteLimit)
+				_, _ = fmt.Fprintf(&sb, "%.1fmin", pt.MinuteLimit)
 			} else {
-				s += fmt.Sprintf("%.1fnm", pt.NmLimit)
+				_, _ = fmt.Fprintf(&sb, "%.1fnm", pt.NmLimit)
 			}
+
 			if pt.Entry180NoPT {
-				s += "/nopt180"
+				sb.WriteString("/nopt180")
 			}
+
 			if pt.ExitAltitude != 0 {
-				s += fmt.Sprintf("/pta%d", pt.ExitAltitude)
+				_, _ = fmt.Fprintf(&sb, "/pta%d", pt.ExitAltitude)
 			}
 		}
-		if w.IAF {
-			s += "/iaf"
-		}
-		if w.IF {
-			s += "/if"
-		}
-		if w.FAF {
-			s += "/faf"
-		}
+
 		if w.NoPT {
-			s += "/nopt"
+			sb.WriteString("/nopt")
 		}
+
+		if w.IAF {
+			sb.WriteString("/iaf")
+		}
+
+		if w.IF {
+			sb.WriteString("/if")
+		}
+
+		if w.FAF {
+			sb.WriteString("/faf")
+		}
+
 		if w.Handoff {
-			s += "/ho"
+			sb.WriteString("/ho")
 		}
+
 		if w.PointOut != "" {
-			s += "/po" + w.PointOut
+			sb.WriteString("/po")
+			sb.WriteString(w.PointOut)
 		}
+
 		if w.FlyOver {
-			s += "/flyover"
+			sb.WriteString("/flyover")
 		}
+
 		if w.Delete {
-			s += "/delete"
+			sb.WriteString("/delete")
 		}
-		if w.Heading != 0 {
-			s += fmt.Sprintf("/h%d", w.Heading)
-		}
-		if w.Arc != nil {
-			if w.Arc.Fix != "" {
-				s += fmt.Sprintf("/arc%.1f%s", w.Arc.Radius, w.Arc.Fix)
-			} else {
-				s += fmt.Sprintf("/arc%.1f", w.Arc.Length)
-			}
-		}
+
 		if w.Airway != "" {
-			s += "/airway" + w.Airway
+			sb.WriteString("/airway")
+			sb.WriteString(w.Airway)
 		}
+
 		if w.OnSID {
-			s += "/sid"
+			sb.WriteString("/sid")
 		}
+
 		if w.OnSTAR {
-			s += "/star"
+			sb.WriteString("/star")
 		}
 
-		entries = append(entries, s)
-
+		entries[i] = sb.String()
+		sb.Reset()
 	}
 
 	return strings.Join(entries, " ")
