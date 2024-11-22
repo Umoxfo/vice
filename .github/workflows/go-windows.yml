@@ -1,0 +1,67 @@
+# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
+name: Go
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+
+  build:
+    runs-on: windows-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Go
+      uses: actions/setup-go@v5
+      with:
+        go-version-file: go.mod
+        cache-dependency-path: go.sum
+        
+    - name: Checkout Windows prebuilt
+      uses: actions/checkout@v4
+      with:
+        repository: mmp/vice-windows-ext
+        path: ./ext
+
+    - name: Install Windows prebuilt
+      working-directory: ./ext
+      run: |
+        unzip -q SDL2-devel-2.24.0-mingw.zip
+        7z x x86_64-12.2.0-release-win32-seh-rt_v10-rev0.7z -omingw
+        echo ${{ github.workspace }}/ext/mingw/mingw64 >> $GITHUB_PATH
+        ls
+
+    - name: Prepare icon resources
+      run: |
+        go install github.com/tc-hib/go-winres@latest
+        go-winres make --in windows/winres.json
+
+    - name: Build
+      run: |
+        git describe --tags --abbrev=8 --dirty --always --long > resources/version.txt
+        go build -tags static -ldflags -H=windowsgui -o ./vice.exe .
+        ls
+      env:
+        CGO_CFLAGS: "-I ../ext/SDL2-2.24.0/x86_64-w64-mingw32/include"
+        CGO_CPPFLAGS: "-I ../ext/SDL2-2.24.0/x86_64-w64-mingw32/include"
+        CGO_LDFLAGS: "-L ../ext/SDL2-2.24.0/x86_64-w64-mingw32/lib"
+
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v4
+
+    - name: Install WiX
+      run: dotnet tool install --global wix
+
+    - name: Build installer
+      run: dotnet build ./windows/Vice-Installer.wixproj -a x64 -c Release -p:DefineConstants=Version=0.11.6 -o out
+
+    - name: Save installer
+      uses: actions/upload-artifact@v4
+      with:
+        name: Vice-installer.msi
+        path: out/Vice-installer.msi
