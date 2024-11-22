@@ -52,3 +52,14 @@ jobs:
         CGO_CFLAGS: "-I ../ext/SDL2-2.24.0/x86_64-w64-mingw32/include"
         CGO_CPPFLAGS: "-I ../ext/SDL2-2.24.0/x86_64-w64-mingw32/include"
         CGO_LDFLAGS: "-L ../ext/SDL2-2.24.0/x86_64-w64-mingw32/lib"
+    
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 9
+
+    - name: Install WiX
+      run: dotnet tool install --global wix
+
+    - name: Build Installer
+      run: dotnet build ./windows/Vice-Installer.wixproj -a x64 -c Release -p:DefineConstants=Version=0.11.6 -o out
