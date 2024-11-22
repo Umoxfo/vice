@@ -62,7 +62,7 @@ jobs:
       run: dotnet tool install --global wix
 
     - name: Build Installer
-      run: dotnet build ./windows/Vice-Installer.wixproj -a x64 -c Release -p:DefineConstants=Version=0.11.6 -o out
+      run: dotnet build ./windows/Vice-Installer.wixproj -r win-x64 -c Release -p:DefineConstants=Version=0.11.6 -o out
 
     - name: Save installer
       uses: actions/upload-artifact@v4
