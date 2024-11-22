@@ -15,13 +15,15 @@ jobs:
     runs-on: windows-latest
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Set up Go
       uses: actions/setup-go@v5
       with:
         go-version-file: go.mod
         cache-dependency-path: go.sum
-        
+
     - name: Checkout Windows prebuilt
       uses: actions/checkout@v4
       with:
@@ -50,18 +52,3 @@ jobs:
         CGO_CFLAGS: "-I ../ext/SDL2-2.24.0/x86_64-w64-mingw32/include"
         CGO_CPPFLAGS: "-I ../ext/SDL2-2.24.0/x86_64-w64-mingw32/include"
         CGO_LDFLAGS: "-L ../ext/SDL2-2.24.0/x86_64-w64-mingw32/lib"
-
-    - name: Setup .NET Core SDK
-      uses: actions/setup-dotnet@v4
-
-    - name: Install WiX
-      run: dotnet tool install --global wix
-
-    - name: Build installer
-      run: dotnet build ./windows/Vice-Installer.wixproj -a x64 -c Release -p:DefineConstants=Version=0.11.6 -o out
-
-    - name: Save installer
-      uses: actions/upload-artifact@v4
-      with:
-        name: Vice-installer.msi
-        path: out/Vice-installer.msi
